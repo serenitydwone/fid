@@ -25,37 +25,35 @@
     }
 
     nav ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
-      text-align: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
     }
 
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
+    nav a {
       text-decoration: none;
       color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d1633c;
     }
   </style>
 </head>
 
 <body>
-  <h1>
-    <img src="blackgoose.png" alt="logo"><br>
-    Black Goose Bistro
-  </h1>
+  <h1><img src="blackgoose.png" alt="logo"><br>Black Goose Bistro</h1>
 
-  <!-- ✅ Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="bgnews.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="../about.html">Jen's Kitchen</a></li>
+      <li><a href="jenskitch.html">Jen's Kitchen</a></li>
     </ul>
   </nav>
 
@@ -67,7 +65,7 @@
 
   <h2>Location and Hours</h2>
   <p>Seekonk, Massachusetts;<br>
-  Monday through Thursday 11am to 9pm;<br>
-  Friday and Saturday, 11am to midnight</p>
+    Monday through Thursday 11am to 9pm; <br>
+    Friday and Saturday, 11am to midnight</p>
 </body>
 </html>
