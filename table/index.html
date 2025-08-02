@@ -45,6 +45,16 @@
             background-color: #e0f7fa; /* Light blue for row labels */
             font-weight: bold;
         }
+        .breed-name {
+            background-color: #b2dfdb; /* Light green-blue for breed name */
+            font-weight: bold;
+        }
+        .attribute-row {
+            background-color: #c8e6c9; /* Light green for attributes */
+        }
+        .details-row {
+            background-color: #f0f4c3; /* Light yellow for details */
+        }
     </style>
 </head>
 <body>
@@ -61,7 +71,7 @@
         </tr>
 
         <!-- Labrador Retriever Rows -->
-        <tr>
+        <tr class="breed-name">
             <td rowspan="4">Labrador Retriever</td>
             <td class="row-label">Size</td>
             <td>Medium</td>
@@ -69,21 +79,21 @@
             <td>Friendly</td>
             <td class="highlight"><img src="images/Labrador_Retriever.jpg" alt="Labrador Retriever"></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Life Expectancy</td>
             <td>12–14 years</td>
             <td class="row-label">Origin</td>
             <td>Canada</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="details-row">
             <td class="row-label">Grooming Needs</td>
             <td>Moderate</td>
             <td class="row-label">Exercise Requirements</td>
             <td>High</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Popular Activity</td>
             <td>Running</td>
             <td class="row-label">Height</td>
@@ -92,7 +102,7 @@
         </tr>
 
         <!-- Bulldog Rows -->
-        <tr>
+        <tr class="breed-name">
             <td rowspan="4">Bulldog</td>
             <td class="row-label">Size</td>
             <td>Medium</td>
@@ -100,21 +110,21 @@
             <td>Calm</td>
             <td class="highlight"><img src="images/Bulldog.jpg" alt="Bulldog"></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Life Expectancy</td>
             <td>8–12 years</td>
             <td class="row-label">Origin</td>
             <td>England</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="details-row">
             <td class="row-label">Grooming Needs</td>
             <td>Low</td>
             <td class="row-label">Exercise Requirements</td>
             <td>Medium</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Popular Activity</td>
             <td>Walking</td>
             <td class="row-label">Height</td>
@@ -123,7 +133,7 @@
         </tr>
 
         <!-- Beagle Harrier Rows -->
-        <tr>
+        <tr class="breed-name">
             <td rowspan="4">Beagle Harrier</td>
             <td class="row-label">Size</td>
             <td>Medium</td>
@@ -131,21 +141,21 @@
             <td>Friendly</td>
             <td class="highlight"><img src="images/Beagle_Harrier.JPG" alt="Beagle Harrier"></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Life Expectancy</td>
             <td>12–15 years</td>
             <td class="row-label">Origin</td>
             <td>France</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="details-row">
             <td class="row-label">Grooming Needs</td>
             <td>Moderate</td>
             <td class="row-label">Exercise Requirements</td>
             <td>Medium</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Popular Activity</td>
             <td>Fetch</td>
             <td class="row-label">Height</td>
@@ -154,7 +164,7 @@
         </tr>
 
         <!-- Poodle Rows -->
-        <tr>
+        <tr class="breed-name">
             <td rowspan="4">Poodle</td>
             <td class="row-label">Size</td>
             <td>Small</td>
@@ -162,21 +172,21 @@
             <td>Intelligent</td>
             <td class="highlight"><img src="images/Poodle.jpg" alt="Poodle"></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Life Expectancy</td>
             <td>12–15 years</td>
             <td class="row-label">Origin</td>
             <td>Germany</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="details-row">
             <td class="row-label">Grooming Needs</td>
             <td>High</td>
             <td class="row-label">Exercise Requirements</td>
             <td>High</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Popular Activity</td>
             <td>Swimming</td>
             <td class="row-label">Height</td>
@@ -185,7 +195,7 @@
         </tr>
 
         <!-- German Shepherd Rows -->
-        <tr>
+        <tr class="breed-name">
             <td rowspan="4">German Shepherd</td>
             <td class="row-label">Size</td>
             <td>Large</td>
@@ -193,21 +203,21 @@
             <td>Protective</td>
             <td class="highlight"><img src="images/german_shepherd.jpg" alt="German Shepherd"></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Life Expectancy</td>
             <td>9–13 years</td>
             <td class="row-label">Origin</td>
             <td>Germany</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="details-row">
             <td class="row-label">Grooming Needs</td>
             <td>Moderate</td>
             <td class="row-label">Exercise Requirements</td>
             <td>High</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="attribute-row">
             <td class="row-label">Popular Activity</td>
             <td>Running</td>
             <td class="row-label">Height</td>
@@ -217,6 +227,8 @@
     </table>
 </body>
 </html>
+
+
 
 
 
