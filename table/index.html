@@ -3,106 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breeds</title>
+    <title>Dog Breeds Information</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f9;
         }
-        .table-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .dog-card {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
             border: 1px solid #ddd;
-            transition: transform 0.3s ease;
         }
-        .dog-card:hover {
-            transform: scale(1.05);
+        th {
+            background-color: #4CAF50;
+            color: white;
         }
-        .dog-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .dog-card h2 {
-            color: #4CAF50;
-            font-size: 1.2em;
-            text-align: center;
-        }
-        .dog-card p {
-            font-size: 1em;
-            text-align: center;
-            margin: 5px 0;
-        }
-        .dog-card .info {
-            color: #333;
-        }
-        .dog-card .info span {
-            font-weight: bold;
-        }
-        .dog-card:nth-child(odd) {
+        tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-        .dog-card:nth-child(even) {
-            background-color: #e9f7e9;
+        td {
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 150px; /* Increased image size */
+            height: auto;
+            vertical-align: middle;
+        }
+        .highlight {
+            background-color: #ffeb3b; /* Yellow highlight for image column */
+        }
+        .row-label {
+            background-color: #e0f7fa; /* Light blue for row labels */
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Dog Breeds</h1>
-    <div class="table-container">
-        <div class="dog-card">
-            <img src="images/Labrador_Retriever.jpg" alt="Labrador Retriever">
-            <h2>Labrador Retriever</h2>
-            <p class="info"><span>Size:</span> Medium</p>
-            <p class="info"><span>Temperament:</span> Friendly</p>
-            <p class="info"><span>Life Expectancy:</span> 12–14 years</p>
-            <p class="info"><span>Origin:</span> Canada</p>
-        </div>
-        <div class="dog-card">
-            <img src="images/Bulldog.jpg" alt="Bulldog">
-            <h2>Bulldog</h2>
-            <p class="info"><span>Size:</span> Medium</p>
-            <p class="info"><span>Temperament:</span> Calm</p>
-            <p class="info"><span>Life Expectancy:</span> 8–12 years</p>
-            <p class="info"><span>Origin:</span> England</p>
-        </div>
-        <div class="dog-card">
-            <img src="images/Beagle_harrier.jpg" alt="Beagle Harrier">
-            <h2>Beagle Harrier</h2>
-            <p class="info"><span>Size:</span> Medium</p>
-            <p class="info"><span>Temperament:</span> Friendly</p>
-            <p class="info"><span>Life Expectancy:</span> 12–15 years</p>
-            <p class="info"><span>Origin:</span> France</p>
-        </div>
-        <div class="dog-card">
-            <img src="images/Poodle.jpg" alt="Poodle">
-            <h2>Poodle</h2>
-            <p class="info"><span>Size:</span> Small</p>
-            <p class="info"><span>Temperament:</span> Intelligent</p>
-            <p class="info"><span>Life Expectancy:</span> 12–15 years</p>
-            <p class="info"><span>Origin:</span> Germany</p>
-        </div>
-        <div class="dog-card">
-            <img src="images/german_shepherd.jpg" alt="German Shepherd">
-            <h2>German Shepherd</h2>
-            <p class="info"><span>Size:</span> Large</p>
-            <p class="info"><span>Temperament:</span> Protective</p>
-            <p class="info"><span>Life Expectancy:</span> 9–13 years</p>
-            <p class="info"><span>Origin:</span> Germany</p>
-        </div>
-    </div>
-</body>
+    <h1>Dog Breeds Information</h1>
+    <table>
+        <!-- Table Header -->
+        <tr>
+            <th>Breed Name</th>
+            <th>Attribute</th>
+            <th>Details</th>
+            <th>Attribute</th>
+            <th>Details</th>
+            <th>Image</th>
+        </tr>
+
+        <!-- Labrador Retriever Rows -->
+        <tr>
+            <td>Labrador Retriever</td>
+            <td class="row-label">Size</td>
+            <td>Medium</td>
+            <td class="row-label">Temperament</td>
+            <td>Friendly</td>
+            <td class="highlight"><img src="images/Labrador_Retriever.jpg" alt="Labrador Retriever"></td>
+        </tr>
+        <tr>
+            <td>Labrador Retriever</td>
+            <td class="row-label">Life Expectancy</td>
+            <td>12–14 years</td>
+            <td class="row-label">Origin</td>
+            <td>Canada</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Labrador Retriever</td>
+            <td class="row-label">Grooming Needs</td>
+            <td>Moderate</td>
+            <td class="row-label">Exercise Requirements</td>
+            <td>High</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Labrador Retriever</td>
+            <td class="row-label">Popular Activity</td>
+            <td>Running</td>
+            <td class="row-label">Height</td>
+            <td>22-24 inches</td>
+            <td></td>
+        </tr>
+
+        <!-- Bulldog Rows -->
+        <tr>
+            <td>Bulldog</td>
+            <td class="row-label">Size</td>
+            <td>Medium</td>
+            <td class="row-label">Temperament</td>
+            <td>Calm</td>
+            <td class="highlight"><img src="images/Bulldog.jpg" alt="Bulldog"></td>
+        </tr>
+        <tr>
+            <td>Bulldog</td>
+            <td class="row-label">Life Expectancy</td>
+            <td>8–12 years</td>
+            <td class="row-label">Origin</td>
+            <td>England</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bulldog</td>
+            <td class="row-label">Grooming Needs</td>
+            <td>Low</td>
+            <td class="row-label">Exercise Requirements</td>
+            <td>Medium</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bulldog</td>
+            <td class="row-label">Popular Activity</td>
+            <td>Walking</td>
+            <td class="row-label">Height</td>
+            <td>14-15 inches</td>
+            <td></td>
+        </tr>
+
+        <!-- Beagle Harrier Rows -->
+        <tr>
+            <td>Beagle Harrier</td>
+            <td class="row-label">Size</td>
+            <td>Medium</td>
+            <td class="row-label">Temperament</td>
+            <td>Friendly</td>
+            <td class="highlight"><img src="images/Beagle_harrier.jpg" alt="Beagle Harrier"></td>
+        </tr>
+        <tr>
+            <td>Beagle Harrier</td>
+            <td class="row-label">Life Expectancy</td>
+            <td>12–15 years</td>
+            <td class="row-label">Origin</td>
+            <td>France</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beagle Harrier</td>
+            <td class="row-label">Grooming Needs</td>
+            <td>Moderate</td>
+            <td class="row-label">Exercise Requirements</td>
+            <td>Medium</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beagle Harrier</td>
+            <td class="row-label">Popular Activity</td>
+            <td>Fetch</td>
+            <td class="row-label">Height</td>
+            <td>16-18 inches</td>
+            <td></td>
+        </tr>
+
+        <!-- Poodle Rows -->
+        <tr>
+            <td>Poodle</td>
+            <td class="row-label">Size</td>
+            <td>Small</td>
+            <td class="row-label">Temperament</td>
+            <td>Intelligent</td>
+            <td class="highlight"><img src="images/Poodle.jpg" alt="Poodle"></td>
+        </tr>
+        <tr>
+            <td>Poodle</td>
+            <td class="row-label">Life Expectancy</td>
+            <td>12–15 years</td>
+            <td class="row-
+
 </html>
+
 
 
